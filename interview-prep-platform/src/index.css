@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    background-color: #f9fafb; /* gray-50 */
+    color: #111827; /* gray-900 */
+    transition: color 300ms, background-color 300ms;
+  }
+
+  html.dark body {
+    background-color: #0b1220; /* near slate/gray-950 */
+    color: #f3f4f6; /* gray-100 */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #2563eb; /* blue-600 */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 24px; /* py-2.5 px-6 */
+    border-radius: 12px; /* rounded-lg */
+    transition: background-color 200ms, transform 100ms;
+  }
+
+  .btn-primary:hover {
+    background-color: #1d4ed8; /* blue-700 */
+  }
+
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+  .btn-secondary {
+    background-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+    font-weight: 600;
+    padding: 10px 24px; /* py-2.5 px-6 */
+    border-radius: 12px; /* rounded-lg */
+    transition: background-color 200ms, color 200ms, transform 100ms;
+  }
+
+  .btn-secondary:hover {
+    background-color: #d1d5db; /* gray-300 */
+  }
+
+  html.dark .btn-secondary {
+    background-color: #374151; /* gray-700 */
+    color: #f3f4f6; /* gray-100 */
+  }
+
+  html.dark .btn-secondary:hover {
+    background-color: #4b5563; /* gray-600-ish */
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px; /* rounded-2xl */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border: 1px solid rgba(209, 213, 219, 1); /* gray-200 */
+    padding: 24px; /* p-6 */
+  }
+
+  html.dark .card {
+    background-color: #0f172a; /* dark surface */
+    border-color: rgba(55, 65, 81, 1); /* gray-700-ish */
+  }
+}
