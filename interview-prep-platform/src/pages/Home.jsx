@@ -45,7 +45,7 @@ export default function Home() {
               key={label}
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm"
             >
-              <Icon size={15} className="text-brand-500 flex-shrink-0" />
+              <Icon size={15} className="text-brand-500 shrink-0" />
               <div className="text-left">
                 <p className="text-xs font-semibold text-gray-800 dark:text-gray-200">{label}</p>
                 <p className="text-xs text-gray-400">{desc}</p>
