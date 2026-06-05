@@ -7,7 +7,7 @@ def generate_binary_data(num_samples: int = 1000) -> tuple[np.ndarray, np.ndarra
     X_0 = np.random.randn(sample_class_0, 2) + np.array([2, 2]) #Class 0 centered at (2, 2)
     Y_0 = np.zeroes(sample_class_0) #Class 0 labels
     
-    smaple_class_1 = num_samples - sample_class_0
+    sample_class_1 = num_samples - sample_class_0
     X_1 = np.random.randn(sample_class_0, 2) + np.array([-2, -2]) #Class 1 centered at (-2, -2)
     Y_1 = np.ones(sample_class_1) #Class 1 labels
     
