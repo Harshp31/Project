@@ -35,13 +35,13 @@ class LogisticRegressionfromScratch:
             
         return loss_history
     
-def predict_probability(self, X: np.ndarray) -> np.ndarray:
-    linear_model = np.dot(X, self.weight) + self.bias
-    return sigmoid(linear_model)
+    def predict_probability(self, X: np.ndarray) -> np.ndarray:
+        linear_model = np.dot(X, self.weight) + self.bias
+        return sigmoid(linear_model)
 
-def predict(self, X:np.ndarray, threshold: float = 0.5) -> np.ndarray:
-    probabilities = self.predict_probability(X)
-    return np.where(probabilities >= threshold, 1, 0).astype(int)
+    def predict(self, X:np.ndarray, threshold: float = 0.5) -> np.ndarray:
+        probabilities = self.predict_probability(X)
+        return np.where(probabilities >= threshold, 1, 0).astype(int)
     
     
             
