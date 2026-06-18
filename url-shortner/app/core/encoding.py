@@ -22,5 +22,6 @@ def decode(short_code: str) -> int:
     for char in short_code:
         num = num * BASE + ALPHABET.index(char)
     return num
+
          
     
